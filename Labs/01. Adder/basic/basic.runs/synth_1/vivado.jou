@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 10 23:40:45 2024
+# Process ID: 25852
+# Current directory: C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.runs/synth_1
+# Command line: vivado.exe -log basic.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basic.tcl
+# Log file: C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.runs/synth_1/basic.vds
+# Journal file: C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source basic.tcl -notrace

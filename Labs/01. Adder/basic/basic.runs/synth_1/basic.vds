@@ -1,0 +1,550 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 10 23:40:45 2024
+# Process ID: 25852
+# Current directory: C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.runs/synth_1
+# Command line: vivado.exe -log basic.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basic.tcl
+# Log file: C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.runs/synth_1/basic.vds
+# Journal file: C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source basic.tcl -notrace
+Command: synth_design -top basic -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26932 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 693.742 ; gain = 178.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'basic' [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/sources_1/new/basic.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'basic' (1#1) [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/sources_1/new/basic.sv:23]
+WARNING: [Synth 8-3331] design basic has unconnected port LED[5]
+WARNING: [Synth 8-3331] design basic has unconnected port LED[3]
+WARNING: [Synth 8-3331] design basic has unconnected port LED[1]
+WARNING: [Synth 8-3331] design basic has unconnected port SW[15]
+WARNING: [Synth 8-3331] design basic has unconnected port SW[10]
+WARNING: [Synth 8-3331] design basic has unconnected port SW[9]
+WARNING: [Synth 8-3331] design basic has unconnected port SW[8]
+WARNING: [Synth 8-3331] design basic has unconnected port SW[7]
+WARNING: [Synth 8-3331] design basic has unconnected port SW[6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 757.090 ; gain = 241.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 757.090 ; gain = 241.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 757.090 ; gain = 241.879
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:229]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:229]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:230]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:230]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:231]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:231]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:232]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:232]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:249]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:249]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:250]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:252]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:448]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:448]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:449]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:449]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:450]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:450]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:451]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:451]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:468]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:468]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:469]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:469]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:470]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:470]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:471]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:471]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:669]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:669]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:670]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:670]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:671]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:671]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:672]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:672]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:683]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:683]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:684]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:684]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:685]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:685]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:686]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:686]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:867]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:867]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:868]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:868]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:869]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:869]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:870]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:870]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:881]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:881]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:882]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:882]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:883]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:883]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:884]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:884]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1064]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1064]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1065]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1065]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1076]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1076]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1077]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1077]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1078]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1078]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1079]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1079]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1233]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1233]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1234]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1234]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1235]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1235]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1236]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1236]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1410]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1410]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1411]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1411]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1412]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1412]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1413]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1413]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1414]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1414]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1415]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1415]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1416]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1416]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1417]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1417]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1418]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1418]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1419]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1419]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1420]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1420]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1421]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1421]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1422]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1422]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1423]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1423]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1424]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1424]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1425]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1425]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1429]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1429]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1430]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1430]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1431]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1431]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1432]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1432]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1433]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1433]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1434]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1434]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1435]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1435]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1436]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1436]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1437]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1437]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1438]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1438]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1439]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1439]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1440]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1440]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1441]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1441]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1442]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1442]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1443]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1443]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1444]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1444]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1570]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1570]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1571]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1571]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1713]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1713]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1714]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1714]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1715]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1715]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1716]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc:1716]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.srcs/constrs_1/new/basic.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/basic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/basic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 807.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 807.156 ; gain = 291.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 807.156 ; gain = 291.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 807.156 ; gain = 291.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 807.156 ; gain = 291.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module basic 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design basic has port LED[10] driven by constant 1
+WARNING: [Synth 8-3917] design basic has port LED[9] driven by constant 1
+WARNING: [Synth 8-3917] design basic has port LED[8] driven by constant 1
+WARNING: [Synth 8-3917] design basic has port LED[7] driven by constant 1
+WARNING: [Synth 8-3331] design basic has unconnected port SW[15]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 807.156 ; gain = 291.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:51 . Memory (MB): peak = 850.918 ; gain = 335.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:51 . Memory (MB): peak = 850.918 ; gain = 335.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:51 . Memory (MB): peak = 860.477 ; gain = 345.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 876.277 ; gain = 361.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 876.277 ; gain = 361.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 876.277 ; gain = 361.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 876.277 ; gain = 361.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 876.277 ; gain = 361.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 876.277 ; gain = 361.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |     3|
+|3     |IBUF  |    10|
+|4     |OBUF  |    13|
+|5     |OBUFT |     3|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    30|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 876.277 ; gain = 361.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 876.277 ; gain = 311.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 876.277 ; gain = 361.066
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 892.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 104 Warnings, 90 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:12 . Memory (MB): peak = 892.812 ; gain = 597.320
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 892.812 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/basic/basic.runs/synth_1/basic.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file basic_utilization_synth.rpt -pb basic_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 10 23:42:07 2024...
