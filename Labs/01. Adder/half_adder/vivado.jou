@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat May 11 00:06:38 2024
+# Process ID: 15648
+# Current directory: C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/half_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22756 C:\Users\marin\IdeaProjects\educational_assignments\computer_systems_architecture\Labs\01. Adder\half_adder\half_adder.xpr
+# Log file: C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/half_adder/vivado.log
+# Journal file: C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/half_adder\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project {C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/half_adder/half_adder.xpr}uupdate_compile_order -fileset sources_1
+close [ open {C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/half_adder/half_adder.srcs/sources_1/new/testbench.sv} w ]
+add_files {{C:/Users/marin/IdeaProjects/educational_assignments/computer_systems_architecture/Labs/01. Adder/half_adder/half_adder.srcs/sources_1/new/testbench.sv}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
